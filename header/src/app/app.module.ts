@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderModule } from './header/header.module';
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HeaderModule
+  ],
+  declarations: [
+    AppComponent
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
