@@ -8,10 +8,10 @@ import { EventBusService } from './event-bus.service';
 @NgModule({
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   providers: [EventBusService],
   bootstrap: [AppComponent]
