@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EventBusService } from './event-bus.service';
 
 @Component({
   template: `<div class="first-page"> FIRST PAGE </div>`,
@@ -12,4 +13,12 @@ import { Component } from '@angular/core';
     }`
   ]
 })
-export class FirstPageComponent { }
+export class FirstPageComponent {
+
+  constructor(private eventBusService: EventBusService) {
+  }
+
+  ngOnInit() {
+    this.eventBusService.publish('change_app_background', '#8cbbbf');
+  }
+}
