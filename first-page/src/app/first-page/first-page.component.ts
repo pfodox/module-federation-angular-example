@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './first-page.html',
-  styleUrls: ['./first-page.css']
+  selector: 'first-page',
+  template: `
+  <div class="first-page">
+    FIRST PAGE
+  </div>`,
+  styles: ['.first-page {font-size: 24px; color: green;}']
 })
 export class FirstPageComponent { }
